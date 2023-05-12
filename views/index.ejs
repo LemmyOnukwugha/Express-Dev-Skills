@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title>Developer Skills</title>
+  </head>
+  <body>
+    <h1>Lemmy Onukwugha Skills</h1>
+    <div class="skillContainer">
+      <%allSkills.forEach ((skill) => {%>
+      <div class="SDes">
+        <a href="/<%=skill.id%>"><%=skill.name%></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/<%=skill.id%>/edit" class="linkEdit">Edit Skill</a> &nbsp;
+        <form action="/<%=skill.id%>/?_method=DELETE" method="POST">
+          <button type="submit">Delete Skill</button>
+        </form>
+      </div>
+
+      <%})%>
+      <br /><br />
+      <a href="/new">ADD</a>
+    </div>
+  </body>
+</html>

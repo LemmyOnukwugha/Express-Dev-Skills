@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Edit skill</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1>EDIT Lemmy Skills</h1>
+
+    <form
+      action="/<%=selectSkill.id%>?_method=PUT"
+      method="POST"
+      autocomplete="off"
+    >
+      <label for="">Name:</label>&nbsp;<input
+        type="textbox"
+        name="name"
+        value="<%=selectSkill.name%>"
+      /><br />
+      <label for="">Description:</label>&nbsp;
+      <input
+        type="textbox"
+        size="50px"
+        value="<%=selectSkill.des%>"
+        name="des"
+      /><br />
+      <input type="submit" value="Update" />
+    </form>
+  </body>
+</html>

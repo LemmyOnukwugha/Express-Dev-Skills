@@ -1,0 +1,37 @@
+body {
+  padding: 50px;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: white;
+  color: rgb(70, 70, 70);
+  line-height: 29px;
+}
+
+a {
+  color: rgb(21, 21, 21);
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: square;
+  color: white;
+}
+
+skillContainer {
+  display: grid;
+  grid-template-areas: "Des Edi";
+}
+
+.SDes {
+  grid-area: Des;
+}
+
+.SEDIT {
+  grid-area: Edi;
+}
+
+.linkEdit {
+  color: green;
+}
+.linkDelete {
+  color: red;
+}
